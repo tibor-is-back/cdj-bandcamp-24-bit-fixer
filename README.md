@@ -1,6 +1,6 @@
 # Bandcamp 24 Bit wav format fix for CDJs
 
-Did you run into the issue that you prepared a nice set but then when you put the USB into the CDJ it gave an error for the files? 
+Did you run into the issue that you prepared a nice set but then when you put the USB into the CDJ it gave an error? 
 
 Some WAV files from Bandcamp don’t play on Pioneer (AlphaTheta) CDJs. The issue isn’t bit depth but format: these files use enhanced multichannel audio instead of standard PCM. CDJs check the wFormatTag at the start of the file to decide how to read it, and when it’s set to the extended format, they fail.
 
